@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Porfolio of Annette Harper" />
+    <meta name="author" content="Annette Harper">
+
+    <title>Porfolio of Annette Harper</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:%20100,300,400">
+    <link rel="stylesheet" href="http://normalize-css.googlecode.com/svn/trunc/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Using Bootstrap classes to make content cover more columns as the viewport decreases. -->
+        <div class="col-xs-4 col-sm-3 col-md-2">
+          <img src="images/Annette-Udacity-125.png" alt="Annette at Udacity">
+        </div>
+        <div class="col-xs-8 col-sm-9 col-md-10 text-right text-uppercase">
+          <h1>Annette Harper</h1>
+          <h4>Front-end Ninja</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <picture>
+            <!-- Set breakpoints for image changes at the Bootstrap defaults (except the smallest one) making sure that image is at least as big as the viewport. Not sure if there is a better way. Also, I'm not really happy with Bootstrap's breakpoints, considering changing them.
+
+            I wouldn't really put the photo of me on a professional site, but it was good for the zooming in effect.-->
+
+            <source media="(min-width: 992px)"
+             srcset="images/Annette-at-Home-1600.jpg 1x,
+                     images/Annette-at-Home-3200.jpg 2x" />
+            <source media="(min-width: 768px)"
+             srcset="images/Annette-at-Home-900.jpg 1x,
+                     images/Annette-at-Home-1800.jpg 2x" />
+            <source media="(min-width: 301px)"
+             srcset="images/Annette-at-Home-750.jpg 1x,
+                     images/Annette-at-Home-1500.jpg 2x" />
+            <source media="(min-width: 150px)"
+             srcset="images/Annette-at-Home-300.jpg 1x,
+                     images/Annette-at-Home-600.jpg 2x" />
+            <img class="img-responsive center-block" src="images/Annette-at-Home-750.jpg" alt="Annette Harper at 212 West 2nd Street in Madison, Indiana">
+          </picture>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" id="Work">
+          <h2>Featured Work</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img class="img-responsive center-block" src="images/Map.jpg" alt="Neighborhood Map Project" data-toggle="modal" data-target="#Map">
+          <h3>Neighborhood Map Project</h3>
+          <p><a href="#Work">Link to project not yet available</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img class="img-responsive center-block" src="images/Frogger.jpg" alt="Frogger-like arcade game"
+              data-toggle="modal" data-target="#Frogger">
+          <h3>Frogger-like arcade game</h3>
+          <p><a href="#Work">Link to project not yet available</a></p>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <a href="http://www.amazon.com/CRCP-Crystal-Reports-Certified-Professional/dp/0072257849/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1427224354&amp;sr=1-1&amp;keywords=Annette+Harper" target="_blank"> <img class="img-responsive center-block" src="images/CRCP.jpg" alt="CRCP Exam Guide Book"></a>
+          <h4>Crystal Reports Exam Guide</h4>
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-2">
+          <a href="http://www.amazon.com/Crystal-Reports-Oracle-Database-Professionals-ebook/dp/B00FPYQBRC/ref=sr_1_4?s=books&amp;ie=UTF8&amp;qid=1427224354&amp;sr=1-4&amp;keywords=Annette+Harper" target="_blank"><img class="img-responsive center-block" src="images/CrystalOnOracle.jpg" alt="Crystal Reports 9 on Oracle"></a>
+          <h4>Crystal Reports 9 on Oracle</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <hr>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <address>
+            <p><strong>Annette Harper</strong><br>
+            212 W 2nd Street<br>
+            Madison, Indiana 47250</p>
+          </address>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <address>
+              <p><strong>Contact Me</strong><br>
+              <abbr title="Phone">P:</abbr> (812) 493-9838<br>
+              <abbr title="e-mail">E:</abbr> <a href="mailto:#">m.annette.harper@gmail.com</a></p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Frogger" tabindex="-1" role="dialog" aria-labelledby="App1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="App1Label">Frogger App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive center-block" src="images/Frogger.jpg" alt="Frogger-like arcade game">
+            <p>I am looking forward to creating the Frogger game as I remember it fondly.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Map" tabindex="-1" role="dialog" aria-labelledby="App2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="App2Label">Neighborhood Map Project</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive center-block" src="images/Map.jpg" alt="Neighborhood Map Project">
+            <p>This project is way in the future yet, but I can see many different ways to use the techniques it teaches.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
